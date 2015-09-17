@@ -8,22 +8,22 @@
 
 
 #####饿汉模式实现：
- 1. 将类的构造方法私有化
+ 1. 将类的构造方法私有化<br>
  	```
     private Singleton(){}
     ```
- 2. 创建类的唯一实例，使用private static 修饰
+ 2. 创建类的唯一实例，使用private static 修饰<br>
 	 ```
  	private static Singleton instance = new Singleton()
     ```
  3. 提供一个用于获取实例的方法，使用public static 修饰此时，创建了一个唯一的实例，永远只创建一次。
 
 #####懒汉模式实现：
- 1. 将类的构造方法私有化
+ 1. 将类的构造方法私有化<br>
  	```
     private Singleton(){}
     ```
- 2. 声明类的唯一实例，使用private static 修饰
+ 2. 声明类的唯一实例，使用private static 修饰<br>
  	```
     private Singleton(){}
     ```
